@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        /* background-color: yellow; */
+        font-family: serif;
+    }
+    .navigationbar{
+        height: 100px;
+        background-color: #1b1b1c;
+        
+    }
+    .main_heading{
+        font-weight: lighter;
+        color: #db440d;
+        display: flex;
+        justify-content: center;
+        padding-top: 24px;
+        
+        
+        
+        
+    }
+    .main_heading:hover{
+        font-size: larger;
+        color: red;
+        transition-duration: 1s;
+    }
+    .left_stick{
+        height: 138px;
+        width: 5px;
+        background-color: orange;
+        position: relative;
+        left: 540px;
+        top: -87px;
+        transform: rotate(135deg);
+        display: inline-block;
+        margin: 7px;
+    }
+     .right_stick{
+        height: 138px;
+        width: 5px;
+        background-color: orange;
+        position: relative;
+        left: 902px;
+        top: -87px;
+        transform: rotate(45deg);
+        display: inline-block;
+        margin: 7px;
+    }
+    .msg-title{
+        position: relative;   
+        width: fit-content;       
+        top: 10px;
+        left: 635px;
+        border: 2px dotted black;
+        border-radius: 10px;
+        background-color:black ;
+        color: white;
+        padding: 5px;
+    }
+    .msg-title:hover{
+        color: orangered;
+    }
+    .intro{
+        display: inline-block;
+        height: 225px;
+        width: 900px;
+        color: white;
+        background-color: black;
+        position: relative;
+        left: 100px;
+        top: 30px;
+        border-radius: 25px;
+        align-items: center;
+        padding: 50px;
+
+    }
+    .intro:hover{
+        font-size: larger  ;
+        transition-duration: .3s;
+        background-color: #0c1226;
+        color: red;
+    }
+    .intro_pic{
+        position: relative;
+        right   : -1150px;
+        top: -295px;
+        border: 2px solid black;
+        height: 290px;
+        width: 345px;
+        padding: 10px 15px 20px 10px;
+        border-radius: 20px;
+        background-color: #28292b;
+        display: inline-block;
+    }
+   
+    .application_text{
+        height:225px ;
+        width: 900px;
+        background-color:black;
+        position: relative;
+        right: -540px;
+        top: -268px;
+        border-radius: 25px;
+        color: white    ;
+        padding: 50px;
+    }
+    .applicationheaing{
+        width: fit-content;       
+        top: 10px;
+        left: 635px;
+        border: 2px dotted black;
+        border-radius: 10px;
+        background-color:black ;
+        color: white;
+        padding: 5px;
+        top: 100px;
+        display: inline-block;
+    }
+    .application_text:hover{
+        font-size: larger  ;
+        transition-duration: .3s;
+        background-color: #0c1226;
+        color: red;
+    }
+    #toup{
+        position: relative;
+        top: -235px;
+        border: 2px dotted black;
+        display: inline-block;
+        padding: 5px;
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+        left: 320px;
+        font-size: large;
+    }
+    .toup:hover{
+        color: #db440d;
+    }
+    .linecross{
+        height: 40px;
+        width: 5px;
+        background-color: black;
+        position: relative;
+        display: inline-block;
+        top: -184px;
+        right: -282px;
+    }
+    .linecrosss{
+        height: 150px;
+        width: 5px;
+        background-color: black;
+        position: relative;
+        display: inline-block;
+        top: -107px;
+        right: -346px;
+        transform: rotate(90deg);
+        
+        
+    }
+    .twopic{
+        height: 350px;
+        background-color: #4a4f59;
+        position: relative;
+        top: -170px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        color: white;
+    }
+    .quicknote{
+        border: 2px dotted white;
+        border-radius: 25px;
+        padding: 10px;
+        width: 300px;
+    }
+    .quicknote:hover{
+        background-color: black;
+    }
+    
+    .impact{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        top: -124px;
+        font-weight: lighter;
+        border: 2px solid black;
+        width: fit-content;
+        color: white;
+        background-color:black;
+        border-radius: 20px;
+        padding: 10px;
+
+    }
+    .impact:hover{
+        color: #db440d;
+    }
+    .impact-text{
+        width: 80%;
+        border: 2px solid black;
+        background-color: black;
+        color: white;
+        padding: 20px;
+        border-radius:20px ;
+        top: 20px;
+        margin-top: -97px;
+        
+    }
+    /* .impact-text:hover{
+        font-size: larger  ;
+        transition-duration: .3s;
+        background-color: #0c1226;
+        color: red;
+    } */
+    body{
+        background-color: #733a14;
+    }
+    .parentadv{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        
+    }
+    .advantage{
+    
+     
+     background-color: black;
+     color: wheat;
+     border: 1px solid black;
+        width: fit-content;
+        border-radius: 25px;
+
+    }
+    .advantage:hover{
+        color: #db440d;
+    }
+    .parentofadv{
+        display: flex;
+        height: 500px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        height: fit-content;
+        margin-right: 50px;
+    }
+    .textofadv{
+        background-color: black;
+        color: white;
+        padding: 20px;
+        
+    }
+    .advpicture{
+        display: flex;
+        justify-content: space-between;
+        border: 2px sold black;
+        background-color: grey;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+   
+  
+    
+    .parentpictt{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .pict{
+        position: relative;
+        display: inline-block;
+    }
+    .pict::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Transparent background */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    }
+    .pict:hover::after {
+    opacity: 0.5; /* Opacity when hovering */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    }
+    .pict {
+    box-shadow: 0 10px 50px black; /* Adjust values as desired */        
+   }
+    .pictt{
+        position: relative;
+        display: inline-block;
+    }
+    .pictt::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Transparent background */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    }
+    .pictt:hover::after {
+    opacity: 0.5; /* Opacity when hovering */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    }
+    .pictt {
+    box-shadow: 0 10px 50px black; /* Adjust values as desired */        
+   }
+    .picttt{
+        position: relative;
+        display: inline-block;
+    }
+    .picttt::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Transparent background */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    }
+    .picttt:hover::after {
+    opacity: 0.5; /* Opacity when hovering */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    }
+    .picttt {
+    box-shadow: 0 10px 50px black; /* Adjust values as desired */        
+   }
+   #picture {
+    box-shadow: 0 10px 50px black; /* Adjust values as desired */        
+   }
+   #picturee {
+    box-shadow: 0 10px 50px black; /* Adjust values as desired */        
+   }
+   .challlgeflex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+   }
+
+   .chanllange{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 25px;
+   }
+   .chanllange:hover{
+    color: #db440d;
+   }
+   .twintext{
+    width: 100%;
+    height: 400px;
+    /* background-color: grey; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+   }
+
+   .firsttext{
+    background-color: black;
+    color: white;
+    width: 45%;
+    display: inline-block;
+    border-radius: 25px;
+    padding: 30px;
+
+   }
+   .secondtext{
+    background-color: black;
+    color: white;
+    width: 45%;
+    display: inline-block;
+    border-radius: 25px;
+    padding: 30px;
+   }
+   .firsttext:hover {
+    color: white;
+    background-color: #2b2a29;
+   }
+   .secondtext:hover  {
+    background-color: #2b2a29;
+   }
+   .caseflex{
+    width:100%;
+    background-color: black ;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    
+
+   }
+   .casestudy{
+    color: white;
+    border: 2px solid black;
+    width: fit-content;
+    padding: 10px;
+   }
+   .casestudy:hover{
+    color: orangered;
+   }
+   .caseparenttext{
+    margin-top: 30px;
+    width: 100%;
+    
+    
+   }
+   .casetext{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 25px;
+   }
+   .casetext:hover{
+    background-color: #2b2a29;
+    /* font-size: larger;
+    transition-duration: .3s; */
+   }
+   .thankyoupic{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin-top: 10px;
+   }
+   .tnktext{
+    background-color: black;
+    color: white    ;
+    height: fit-content;
+    padding: 30px;
+    margin: 50px;
+    border-radius: 40px;
+    font-family: cursive;
+   }
+   .footer{
+    background-image: url(backgroundimage.jpg);
+    width: 100%;
+    height: auto;
+   }
+   .mydetails{
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+   }
+   .mydetails{
+    margin-top: 50px;
+    text-decoration: none;
+   }
+   .aboutme{
+    color: white;
+    padding: 5px;
+    /* border: 3px solid white; */
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+   }
+   .adress{
+    color: white;
+    margin-left: 450px;
+    margin-top: -210px;
+    /* border: 3px solid white; */
+    height: 205px;
+    width: 200px; 
+    } 
+    .phone{
+        color: white;
+    margin-left: 910px;
+    margin-top: -210px;
+    /* border: 3px solid white; */
+    height: 205px;
+    width: 200px;
+    }
+    .email{
+        color: white;
+    margin-left: 1309px;
+    margin-top: -210px;
+    /* border: 3px solid white; */
+    height: 205px;
+    width: 200px;
+    }
+   
+    </style>
+    
+</head>
+<body>
+    <div class="navigationbar">
+        <h1 class="main_heading">ROBOTICS IN MANKIND</h1>
+        <div class="left_stick">   
+        </div>
+        <div class="left_stick">   
+        </div>
+        <div class="right_stick">   
+        </div>
+        <div class="right_stick">   
+        </div>
+    </div>
+    
+   
+    
+
+    <!-- body starts -->
+    <header class="msg-title">
+    <h2>Introduction to Robotics</h2>
+</header>
+    
+    <p class="intro"> Robotics is a multidisciplinary field that combines various branches of engineering, computer science, and other sciences to design, develop, and operate robots. A robot is a machine or an autonomous system capable of performing tasks or actions with some level of autonomy. The field of robotics encompasses the study, creation, and application of robots for a wide range of purposes.
+
+        Robots are typically composed of mechanical components, electronics, and software systems that enable them to interact with the physical world, make decisions, and perform tasks. The design and construction of robots often involve aspects such as kinematics, dynamics, control systems, sensors, and actuators.
+        
+        The applications of robotics are diverse and can be found in various industries and domains. Industrial robots are commonly used in manufacturing and assembly lines to automate repetitive or hazardous tasks. Robots are also used in healthcare for surgery, rehabilitation, and assistance to the elderly or people with disabilities. In agriculture, robots are employed for tasks like harvesting, planting, and monitoring crops. Additionally, robots can be found in exploration and space missions, household chores, transportation, entertainment, and many other areas.
+        
+        <div class="parentofinto">
+        <div class="intro_pic">
+            <img height="300px" width="350px" src="mythical.jpg" alt="ultimate">
+        </div>
+    </div>
+    </p>
+    <p id="toup">Applications of Robotics</p>
+    <!-- <div class="applicationheaing">
+        <h2></h2> -->
+        
+    </div>
+    <div class="linecross">
+    </div>
+    <div class="linecrosss">
+    </div>
+    <div class="application_text">
+        <p>
+            
+            - Industrial robotics and automation: How robots have revolutionized manufacturing and production processes.<br>
+            - Medical robotics: Use of robots in surgical procedures, rehabilitation, and patient care.<br>
+            - Service robotics: Robots assisting in tasks like customer service, cleaning, and security.<br>
+            - Exploration and space robotics: Robots in space missions, planetary exploration, and research.<br>
+            - Military and defense robotics: Role of robots in surveillance, bomb disposal, and combat.
+          </p>
+    </div>
+    <div class="twopic">
+        <!-- <marquee behavior="slide" direction="left   ">-->
+            
+         <img id="picture"  height="330px" width="300px" src="look.jpg" alt=""> 
+        <!-- </marquee>   -->
+        <div class="quicknote">
+            <p>
+                <u>QUICK NOTE</u>
+                A robot is a machine or an autonomous system that can perform tasks or actions with some level of autonomy. It combines mechanical, electronic, and software components to interact with the physical world and carry out specific functions.</p>
+        </div>
+        <img id="picturee" height="330px" width="300px" src="learning.jpg" alt="">
+    </div>
+    <div class="impact">
+        <h2>  IMPACT ON SOCITY </h2>
+    </div>
+    <div class="impact-text">
+        <p>The impact of robotics on society is significant and continues to grow as the field advances. Here are some effects of robotics on society:
+
+            Automation and Job Displacement: Robotics and automation have the potential to replace certain human tasks and jobs. While this can lead to increased efficiency and productivity, it may also result in job displacement for some workers. This calls for the need to adapt and retrain the workforce for new roles and industries.
+            
+            Improved Efficiency and Productivity: Robots can perform tasks more quickly, accurately, and tirelessly compared to humans. This leads to increased efficiency and productivity in various industries, such as manufacturing, logistics, and agriculture.
+            
+            Safety Enhancement: Robots can be used in hazardous or dangerous environments, such as handling toxic substances, exploring disaster areas, or working in extreme conditions. They help protect human workers from harm and reduce the risk of accidents and injuries.
+            
+            Healthcare and Assistance: Robotics has made significant advancements in the healthcare sector. Surgical robots enable more precise and minimally invasive procedures, leading to faster recovery times and reduced complications. Robots are also used in rehabilitation, assisting people with disabilities, and providing support for the elderly.
+            
+            Increased Precision and Quality: Robots can consistently perform tasks with high precision and accuracy, leading to improved product quality and reduced errors. This is particularly beneficial in manufacturing and assembly processes.
+            
+            Ethical and Social Considerations: The development of advanced robotics raises ethical and social considerations. These include issues surrounding privacy, security, data protection, the impact on human relationships, and the potential for misuse or ethical dilemmas involving autonomous systems.
+            
+            New Opportunities and Industries: Robotics creates new opportunities for innovation, entrepreneurship, and the development of new industries. It opens doors for the creation of novel products, services, and job roles related to the design, maintenance, and operation of robots.
+            
+            It's important to note that the impact of robotics on society is not solely determined by the technology itself but also by how it is deployed, regulated, and integrated into various contexts. Balancing the benefits and challenges of robotics requires careful consideration of ethical, legal, and societal implications to ensure its responsible and beneficial use.</p>
+    </div>
+    <div class="parentadv">
+    <div class="advantage">
+    <h2>Technological Advances</h2>       
+    </div>
+</div>
+<div class="parentofadv">
+    <div class="textofadv">
+        <p>
+            Automation: Robots are capable of automating repetitive and labor-intensive tasks with precision and efficiency. This automation reduces human error, increases productivity, and frees up human workers to focus on more complex and creative. 
+
+Precision and Accuracy: Robots can perform tasks with a high level of precision and accuracy, surpassing human capabilities in many cases. This is particularly valuable in fields like manufacturing, surgery, and scientific research, where precision is. 
+
+Increased Productivity: Robots can work continuously without the need for breaks, rest, or sleep. They can operate 24/7, resulting in increased productivity and faster production cycles. This advantage is especially significant in industries that require constant operation and quick turnaround times. 
+
+Enhanced Safety: Robots can perform dangerous or hazardous tasks that may pose risks to human workers. By delegating such tasks to robots, the risk of injuries and accidents can be significantly reduced. This is particularly relevant in fields like mining, disaster response, and handling toxic substances. 
+
+Scalability: Robots can be easily replicated and deployed in large numbers to meet growing demands. This scalability is beneficial in industries where mass production or simultaneous execution of tasks is required. It allows for increased production capacity and scalability without the need for significant human labor. 
+
+Data Collection and Analysis: Robots equipped with sensors and advanced algorithms can collect vast amounts of data during their operations. This data can be analyzed to gain valuable insights, optimize processes, and make informed decisions. Robotics facilitates the collection of real-time data, leading to improved efficiency and decision-making in various domains. 
+          </p> 
+    </div>
+</div>
+
+
+<div class="parentpictt">
+<div class="pict">
+    <img height="250px" src="adv1.jpg" alt="">
+</div>
+<div class="pictt">
+    <img height="250px" src="adv2.jpg" alt="">
+</div>
+<div class="picttt">
+    <img height="250px" src="adv3.jpg" alt="">
+</div>
+</div>
+<div class="challlgeflex">
+<div class="chanllange">
+    <h2>Challenges and Future Outlook</h2>
+</div>
+</div>
+<div class="twintext">
+    <div class="firsttext">
+     <p>  <u><b> Challenges:</b></u>
+        <br>
+        <br>
+
+        Safety and Ethics: As robots become more autonomous and interact closely with humans, ensuring their safety and addressing ethical considerations becomes crucial. It involves designing robust safety mechanisms, establishing ethical guidelines, and addressing concerns like privacy, accountability, and the impact on employment.
+        
+        Human-Robot Interaction: Developing intuitive and natural ways for humans to interact with robots remains a challenge. Creating seamless interfaces, understanding human emotions, and enabling effective collaboration between humans and robots are ongoing research areas.
+        
+        Adaptability and Flexibility: While robots excel in performing specific tasks, adapting to new environments or unforeseen situations remains challenging. Robots must become more flexible, capable of handling variations, and learn to adapt quickly to changing circumstances.
+        
+        Cost and Accessibility: Robotics technology can be expensive, limiting its accessibility in certain sectors or regions. Reducing costs, improving affordability, and making robotics more accessible to a wider range of industries and users is an ongoing challenge.
+        
+        Legal and Regulatory Framework: As robots become more autonomous and capable of making decisions, defining legal and regulatory frameworks becomes essential. Issues like liability, accountability, and standards for safety and performance need to be addressed to ensure responsible and ethical use of robotics.
+        
+</p> 
+    </div>
+    <div class="secondtext">
+        <p>
+            <u><b> Future Outlook:</b></u>
+            <br>
+            <br>
+            Collaborative Robots (Cobots): The future of robotics involves closer collaboration between humans and robots. Cobots are designed to work alongside humans, assisting them in tasks, and enhancing productivity and safety. They will continue to find applications in various industries, from manufacturing and healthcare to logistics and home assistance.
+            
+            Artificial Intelligence (AI) Integration: Integrating AI capabilities into robots enables them to learn, adapt, and make decisions based on data and experience. AI-driven robotics will enhance autonomy, perception, and problem-solving abilities, enabling robots to handle complex tasks more effectively.
+            
+            Soft Robotics: Soft robotics focuses on creating robots with flexible and compliant structures that can interact safely with humans and delicate objects. Soft robots offer advantages in areas such as human assistance, medical applications, and exploration of challenging environments.
+            
+            Swarm Robotics: Swarm robotics involves coordinating large groups of relatively simple robots to accomplish complex tasks collectively. Swarm robotics holds potential in areas like search and rescue operations, environmental monitoring, and agriculture, where multiple robots can collaborate to achieve common goals.
+            
+            Robotics in Healthcare: Robotics will continue to play a significant role in healthcare, assisting in surgery, rehabilitation, elderly care, and mental health support. Robotic exoskeletons, prosthetics, and robotic-assisted surgeries are some of the areas with promising advancements.
+            
+           
+          
+        </p>
+    </div>
+</div>
+<div class="caseflex">
+
+<div class="casestudy">
+    <h2>Case Studies and Examples</h2>
+</div>
+</div>
+    <div class="caseparenttext">
+        <div class="casetext">
+            <p>- Enhanced Precision and Dexterity:
+                The robotic arms of the da Vinci system offer a greater range of motion and wrist-like flexibility, allowing surgeons to perform intricate maneuvers with precision. This results in improved surgical outcomes, such as reduced blood loss, minimal scarring, and shorter hospital stays.
+                
+                3D Visualization:
+                The system provides high-definition 3D visualization, giving surgeons a detailed view of the surgical site. This depth perception enhances the surgeon's ability to navigate complex anatomical structures, leading to increased accuracy and reduced risk of damage to surrounding tissues.
+                
+                Surgeon Ergonomics:
+                The surgeon controls the robotic arms from a console, seated in a comfortable position. The console provides a magnified, immersive view of the surgical site. This ergonomic setup reduces surgeon fatigue during long procedures, enabling them to maintain a steady hand and make precise movements throughout the surgery.
+                
+                Teleoperation:
+                The da Vinci system allows for teleoperation, enabling surgeons to perform procedures remotely. This capability has the potential to revolutionize access to surgical expertise, particularly in rural or underserved areas where specialized surgical care may be limited.</p>
+        </div>
+    </div>
+
+    <div class="thankyoupic">
+        <img height="300px" src="robot-312566_1280.webp" alt="">
+        
+        <div class="tnktext">
+            <h3>Thank you for visiting my webpage. <br>Hope you got your answer. <br> To get more information <a href="https://en.wikipedia.org/wiki/Robotics#:~:text=Robotics%20is%20an%20interdisciplinary%20branch,can%20help%20and%20assist%20humans.">click here</a> </h3>
+            
+        </div>
+        
+    </div>
+   <div class="p">
+    <img src="" alt="">
+   </div>
+    
+  
+    <footer class="footer">
+        <div class="mydetails">
+        <a id="logo">ABOUT ME</a>
+        <a >ADRESS</a>
+        <a >PHONE</a>
+        <a >E-MAIL </a>        
+        </div>
+        <div class="rowitem">
+        <div class="aboutme">
+            <p>I am Sandip <br> Currently pursuing Computer Science & Technology at Behala Government Polytechnic </p>
+        </div>
+        <div class="adress">
+            <p>
+                71-Bangashree palli, Behala <br>Kolkata-700060
+            </p>
+            </div>
+        <div class="phone">
+            <p>
+                9800960950 // 7811092033
+            </p>
+            </div>
+        <div class="email">
+            <p>
+                iamsandipsaha2005@gmail.com
+            </p>
+        </div>
+    </div>
+
+    </footer>
+
+</body>
+</html>
